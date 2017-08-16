@@ -1,0 +1,156 @@
+
+Admin@Tech-PC MINGW32 ~
+$ cd :E/
+bash: cd: :E/: No such file or directory
+
+Admin@Tech-PC MINGW32 ~
+$
+
+Admin@Tech-PC MINGW32 ~
+$ cd E:/
+
+Admin@Tech-PC MINGW32 /e
+$
+
+Admin@Tech-PC MINGW32 /e
+$ cd
+$RECYCLE.BIN/
+14-Feb-2015/
+A.bak
+AAA.csv
+AdventureWorksDW2012/
+alamin/
+Batch-03/
+class 17/
+DBQuater.bak
+Ebook__Object Oriented Programming with C# -PV-1.doc
+Ebook__Object Oriented Programming with C# -PV-1.pdf
+ERP/
+Excel Training LEADS Technology (Oct15)/
+Github/
+issabbir/
+Java Project/
+list-districts-bangladesh-438j.xls
+Mahmu/
+Masooom/
+My Company_Default Group_WIN32BIT/
+OJ7000vE809a_Full_14.exe
+Opu/
+Opu HRS/
+POS/
+POS_Project/
+Project2ndBatch/
+Projects 28.11.14/
+res/
+RIA_Batch05/
+roman_empire/
+Safa Picture.PNG
+SQLDatabase/
+System Volume Information/
+Untitled - 1.trc
+Visual Studio 2013/
+Visual Studio 2013.zip
+vs/
+vs.rar
+
+Admin@Tech-PC MINGW32 /e
+$ cd
+
+
+
+Admin@Tech-PC MINGW32 ~
+$
+
+
+
+Admin@Tech-PC MINGW32 ~
+$
+
+
+
+Admin@Tech-PC MINGW32 ~
+$
+
+
+
+Admin@Tech-PC MINGW32 ~
+$
+
+
+Admin@Tech-PC MINGW32 ~
+$
+
+Admin@Tech-PC MINGW32 ~
+$
+
+Admin@Tech-PC MINGW32 ~
+$
+
+Admin@Tech-PC MINGW32 ~
+$
+
+Admin@Tech-PC MINGW32 ~
+$
+
+Admin@Tech-PC MINGW32 ~
+$ cd issabbir
+bash: cd: issabbir: No such file or directory
+
+Admin@Tech-PC MINGW32 ~
+$ cd E:/
+
+Admin@Tech-PC MINGW32 /e
+$ cd issabbir
+
+Admin@Tech-PC MINGW32 /e/issabbir
+$ git clone https://github.com/mahedee/gen-proj-hrm
+Cloning into 'gen-proj-hrm'...
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12 (delta 1), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+
+Admin@Tech-PC MINGW32 /e/issabbir
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Admin@Tech-PC MINGW32 /e/issabbir
+$ cd gen-proj-hrm/
+
+Admin@Tech-PC MINGW32 /e/issabbir/gen-proj-hrm (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TestForAll/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@Tech-PC MINGW32 /e/issabbir/gen-proj-hrm (master)
+$ git add .
+
+Admin@Tech-PC MINGW32 /e/issabbir/gen-proj-hrm (master)
+$ git commit -m "Test Commit"
+[master 560a7b4] Test Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TestForAll/Sabbir.txt
+
+Admin@Tech-PC MINGW32 /e/issabbir/gen-proj-hrm (master)
+$ git push
+fatal: TaskCanceledException encountered.
+   A task was canceled.
+Username for 'https://github.com': issabbir
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 333 bytes | 333.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mahedee/gen-proj-hrm
+   af80985..560a7b4  master -> master
+
+Admin@Tech-PC MINGW32 /e/issabbir/gen-proj-hrm (master)
+$
