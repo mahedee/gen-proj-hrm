@@ -29,5 +29,7 @@ namespace HRM.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Dept> Dept { get; set; }
     }
 }
