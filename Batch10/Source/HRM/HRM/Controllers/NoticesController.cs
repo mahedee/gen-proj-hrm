@@ -10,107 +10,107 @@ using HRM.Models;
 
 namespace HRM.Controllers
 {
-    public class DeptsController : Controller
+    public class NoticesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Depts
+        // GET: Notices
         public ActionResult Index()
         {
-            return View(db.Dept.ToList());
+            return View(db.Notice.ToList());
         }
 
-        // GET: Depts/Details/5
+        // GET: Notices/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dept dept = db.Dept.Find(id);
-            if (dept == null)
+            Notice notice = db.Notice.Find(id);
+            if (notice == null)
             {
                 return HttpNotFound();
             }
-            return View(dept);
+            return View(notice);
         }
 
-        // GET: Depts/Create
+        // GET: Notices/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Depts/Create
+        // POST: Notices/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,CreateDate")] Dept dept)
+        public ActionResult Create([Bind(Include = "Id,Name,Description,PublishDate,ExpireDate,ApproveBy,ApproveDate")] Notice notice)
         {
             if (ModelState.IsValid)
             {
-                db.Dept.Add(dept);
+                db.Notice.Add(notice);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(dept);
+            return View(notice);
         }
 
-        // GET: Depts/Edit/5
+        // GET: Notices/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dept dept = db.Dept.Find(id);
-            if (dept == null)
+            Notice notice = db.Notice.Find(id);
+            if (notice == null)
             {
                 return HttpNotFound();
             }
-            return View(dept);
+            return View(notice);
         }
 
-        // POST: Depts/Edit/5
+        // POST: Notices/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Create_Date")] Dept dept)
+        public ActionResult Edit([Bind(Include = "Id,Name,Description,PublishDate,ExpireDate,ApproveBy,ApproveDate")] Notice notice)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(dept).State = EntityState.Modified;
+                db.Entry(notice).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(dept);
+            return View(notice);
         }
 
-        // GET: Depts/Delete/5
+        // GET: Notices/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Dept dept = db.Dept.Find(id);
-            if (dept == null)
+            Notice notice = db.Notice.Find(id);
+            if (notice == null)
             {
                 return HttpNotFound();
             }
-            return View(dept);
+            return View(notice);
         }
 
-        // POST: Depts/Delete/5
+        // POST: Notices/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Dept dept = db.Dept.Find(id);
-            db.Dept.Remove(dept);
+            Notice notice = db.Notice.Find(id);
+            db.Notice.Remove(notice);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
